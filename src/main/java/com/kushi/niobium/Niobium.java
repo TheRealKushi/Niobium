@@ -1,5 +1,6 @@
 package com.kushi.niobium;
 
+import com.kushi.niobium.blocks.ModBlocks;
 import com.kushi.niobium.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,5 +14,6 @@ public class Niobium implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

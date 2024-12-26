@@ -10,7 +10,6 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item LIGHT_HELMET = registerItem("light_helmet", new Item(new Item.Settings()));
-    public static final Item SLEEPING_BAG = registerItem("sleeping_bag", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Niobium.MOD_ID, name), item);
@@ -21,7 +20,6 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(LIGHT_HELMET);
-            entries.add(SLEEPING_BAG);
         });
     }
 }
