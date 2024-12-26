@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "niobium",
+	"version": "${version}",
+	"name": "Niobium",
+	"description": "This is the Niobium mod by TheRealKushi!",
+	"authors": [
+		"TheRealKushi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/niobium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.kushi.niobium.Niobium"
+		],
+		"fabric-datagen": [
+			"com.kushi.niobium.NiobiumDataGenerator"
+		],
+		"client": [
+			"com.kushi.niobium.NiobiumClient"
+		]
+	},
+	"mixins": [
+		"niobium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
