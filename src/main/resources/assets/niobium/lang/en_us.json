@@ -1,4 +1,12 @@
 {
   "item.niobium.light_helmet": "Light Helmet",
-  "item.niobium.sleeping_bag": "Sleeping Bag"
+  "item.niobium.iron_tile": "Iron Tile",
+  "block.niobium.emerald_prism_block": "Emerald Prism Block",
+  "block.niobium.iron_tiles_block": "Iron Tiles Block",
+  "block.niobium.iron_tiles_slab": "Iron Tiles Slab",
+  "block.niobium.endrite_ore_block": "Endrite Ore",
+
+  "itemgroup.niobium.niobium_items": "Niobium - Items",
+  "itemgroup.niobium.niobium_blocks": "Niobium - Blocks"
+
 }
