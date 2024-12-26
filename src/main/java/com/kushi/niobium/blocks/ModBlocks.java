@@ -1,10 +1,9 @@
 package com.kushi.niobium.blocks;
 
 import com.kushi.niobium.Niobium;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.MapColor;
+import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -13,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block EMERALD_PRISM_BLOCK = registerBlock("emerald_prism_block",
@@ -24,6 +24,13 @@ public class ModBlocks {
                     .luminance(state -> 15)
                     .sounds(BlockSoundGroup.METAL)));
 
+    public static final Block IRON_TILES_SLAB = registerBlock("iron_tiles_slab",
+            new SlabBlock(AbstractBlock.Settings.create()
+                    .mapColor(MapColor.IRON_GRAY)
+                    .requiresTool()
+                    .strength(5.0F, 6.0F)
+                    .sounds(BlockSoundGroup.METAL)));
+
     public static final Block IRON_TILES_BLOCK = registerBlock("iron_tiles_block",
             new Block(AbstractBlock.Settings.create()
                     .mapColor(MapColor.IRON_GRAY)
@@ -31,6 +38,16 @@ public class ModBlocks {
                     .requiresTool()
                     .strength(5.0F, 6.0F)
                     .sounds(BlockSoundGroup.METAL)));
+
+    public static final Block ENDRITE_ORE_BLOCK = registerBlock("endrite_ore_block",
+            new ExperienceDroppingBlock(
+                    UniformIntProvider.create(3, 7),
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.STONE_GRAY)
+                            .instrument(NoteBlockInstrument.BASEDRUM)
+                            .requiresTool()
+                            .strength(3.0F, 3.0F)
+            ));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -44,10 +61,5 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         Niobium.LOGGER.info("Registering Mod Blocks for " + Niobium.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.EMERALD_PRISM_BLOCK);
-            entries.add(ModBlocks.IRON_TILES_BLOCK);
-        });
     }
 }

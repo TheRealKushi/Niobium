@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "niobium:emerald_prism_block",
+    "niobium:iron_tiles_block",
+    "niobium:iron_tiles_slab",
+    "niobium:endrite_block"
+  ]
+}

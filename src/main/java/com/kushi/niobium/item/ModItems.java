@@ -10,6 +10,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item LIGHT_HELMET = registerItem("light_helmet", new Item(new Item.Settings()));
+    public static final Item IRON_TILE = registerItem("iron_tile", new Item(new Item.Settings()));
+    public static final Item ENDRITE_SCRAP = registerItem("endrite_scrap", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Niobium.MOD_ID, name), item);
@@ -17,9 +19,5 @@ public class ModItems {
 
     public static void registerModItems() {
         Niobium.LOGGER.info("Registering Mod Items for " + Niobium.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(LIGHT_HELMET);
-        });
     }
 }
