@@ -1,6 +1,7 @@
 package com.kushi.niobium;
 
-import com.kushi.niobium.blocks.ModBlocks;
+import com.kushi.niobium.block.ModBlocks;
+import com.kushi.niobium.component.ModDataComponentTypes;
 import com.kushi.niobium.item.ModItemGroups;
 import com.kushi.niobium.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,5 +19,7 @@ public class Niobium implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModDataComponentTypes.registerDataComponentTypes();
 	}
 }

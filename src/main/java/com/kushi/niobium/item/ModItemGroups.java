@@ -1,7 +1,7 @@
 package com.kushi.niobium.item;
 
 import com.kushi.niobium.Niobium;
-import com.kushi.niobium.blocks.ModBlocks;
+import com.kushi.niobium.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -18,13 +18,13 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.IRON_TILE);
                         entries.add(ModItems.ENDRITE_SCRAP);
-
+                        entries.add(ModItems.ENDRITE_UPGRADE_SMITHING_TEMPLATE);
                         entries.add(ModItems.CHISEL);
                     }).build());
 
     public static final ItemGroup NIOBIUM_FOODS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Niobium.MOD_ID, "niobium_foods"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RICE))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.COOKED_RICE))
                     .displayName(Text.translatable("itemgroup.niobium.niobium_foods"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.RICE);
@@ -37,10 +37,17 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.niobium.niobium_armor"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.LIGHT_HELMET);
+
                         entries.add(ModItems.ENDRITE_HELMET);
                         entries.add(ModItems.ENDRITE_CHESTPLATE);
                         entries.add(ModItems.ENDRITE_LEGGINGS);
                         entries.add(ModItems.ENDRITE_BOOTS);
+
+                        entries.add(ModItems.ENDRITE_SWORD);
+                        entries.add(ModItems.ENDRITE_AXE);
+                        entries.add(ModItems.ENDRITE_PICKAXE);
+                        entries.add(ModItems.ENDRITE_SHOVEL);
+                        entries.add(ModItems.ENDRITE_HOE);
                     }).build());
 
     public static final ItemGroup NIOBIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -50,7 +57,11 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.EMERALD_PRISM_BLOCK);
                         entries.add(ModBlocks.IRON_TILES_BLOCK);
+                        entries.add(ModBlocks.IRON_TILES_STAIRS);
                         entries.add(ModBlocks.IRON_TILES_SLAB);
+                        entries.add(ModBlocks.IRON_TILES_WALL);
+                        entries.add(ModBlocks.IRON_TILES_DOOR);
+                        entries.add(ModBlocks.IRON_TILES_TRAPDOOR);
                         entries.add(ModBlocks.ENDRITE_ORE_BLOCK);
                     }).build());
 

@@ -9,16 +9,33 @@
   "block.niobium.emerald_prism_block": "Emerald Prism Block",
   "block.niobium.iron_tiles_block": "Iron Tiles Block",
   "block.niobium.iron_tiles_slab": "Iron Tiles Slab",
+  "block.niobium.iron_tiles_stairs": "Iron Tiles Stairs",
+  "block.niobium.iron_tiles_door": "Iron Tiles Door",
+  "block.niobium.iron_tiles_trapdoor": "Iron Tiles Trapdoor",
+  "block.niobium.iron_tiles_wall": "Iron Tiles Wall",
   "block.niobium.endrite_ore_block": "Endrite Ore",
+  "item.niobium.endrite_upgrade_template": "Endrite Smithing Template",
 
   "item.niobium.endrite_helmet": "Endrite Helmet",
   "item.niobium.endrite_chestplate": "Endrite Chestplate",
   "item.niobium.endrite_leggings": "Endrite Leggings",
   "item.niobium.endrite_boots": "Endrite Boots",
 
+  "item.niobium.endrite_sword": "Endrite Sword",
+  "item.niobium.endrite_axe": "Endrite Axe",
+  "item.niobium.endrite_pickaxe": "Endrite Pickaxe",
+  "item.niobium.endrite_shovel": "Endrite Shovel",
+  "item.niobium.endrite_hoe": "Endrite Hoe",
+
   "itemgroup.niobium.niobium_items": "Niobium - Items",
   "itemgroup.niobium.niobium_foods": "Niobium - Foods",
-  "itemgroup.niobium.niobium_armor": "Niobium - Armor",
-  "itemgroup.niobium.niobium_blocks": "Niobium - Blocks"
+  "itemgroup.niobium.niobium_armor": "Niobium - Tools",
+  "itemgroup.niobium.niobium_blocks": "Niobium - Blocks",
+
+  "tooltip.niobium.chisel.shift_down": "§eThis item chisels blocks into their brick variants.",
+  "tooltip.niobium.chisel": "§9Press §eShift§r §9for more information.",
+
+  "tooltip.niobium.iron_tile.shift_down": "§eThis item can be crafted into Iron Tile Blocks.",
+  "tooltip.niobium.iron_tile": "§9Press §eShift§r §9for more information."
 
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "niobium:block/iron_tiles_block",
-    "top": "niobium:block/iron_tiles_block",
-    "side": "niobium:block/iron_tiles_block"
-  }
-}
