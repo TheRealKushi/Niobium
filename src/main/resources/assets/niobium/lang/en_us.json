@@ -1,12 +1,23 @@
 {
   "item.niobium.light_helmet": "Light Helmet",
   "item.niobium.iron_tile": "Iron Tile",
+  "item.niobium.chisel": "Chisel",
+  "item.niobium.rice": "Rice",
+  "item.niobium.cooked_rice": "Cooked Rice",
+  "item.niobium.endrite_scrap": "Endrite Scrap",
+
   "block.niobium.emerald_prism_block": "Emerald Prism Block",
   "block.niobium.iron_tiles_block": "Iron Tiles Block",
   "block.niobium.iron_tiles_slab": "Iron Tiles Slab",
   "block.niobium.endrite_ore_block": "Endrite Ore",
 
+  "item.niobium.endrite_helmet": "Endrite Helmet",
+  "item.niobium.endrite_chestplate": "Endrite Chestplate",
+  "item.niobium.endrite_leggings": "Endrite Leggings",
+  "item.niobium.endrite_boots": "Endrite Boots",
+
   "itemgroup.niobium.niobium_items": "Niobium - Items",
+  "itemgroup.niobium.niobium_armor": "Niobium - Armor",
   "itemgroup.niobium.niobium_blocks": "Niobium - Blocks"
 
 }
