@@ -3,8 +3,13 @@
   "item.niobium.iron_tile": "Iron Tile",
   "item.niobium.chisel": "Chisel",
   "item.niobium.rice": "Rice",
+  "item.niobium.rice_seeds": "Rice Seeds",
+  "block.niobium.rice_crop": "Rice Crop",
   "item.niobium.cooked_rice": "Cooked Rice",
   "item.niobium.endrite_scrap": "Endrite Scrap",
+
+  "item.niobium.blueberries": "Blueberries",
+  "item.niobium.blueberries_bush": "Blueberries Bush",
 
   "block.niobium.emerald_prism_block": "Emerald Prism Block",
   "block.niobium.iron_tiles_block": "Iron Tiles Block",
@@ -14,6 +19,18 @@
   "block.niobium.iron_tiles_trapdoor": "Iron Tiles Trapdoor",
   "block.niobium.iron_tiles_wall": "Iron Tiles Wall",
   "block.niobium.endrite_ore_block": "Endrite Ore",
+  "block.niobium.endrite_block": "Block of Endrite",
+  "block.niobium.quartz_bricks_stairs": "Quartz Brick Stairs",
+
+  "block.niobium.palm_log": "Palm Log",
+  "block.niobium.palm_wood": "Palm Wood",
+  "block.niobium.palm_stripped_log": "Palm Stripped Log",
+  "block.niobium.palm_stripped_wood": "Palm Stripped Wood",
+  "block.niobium.palm_planks": "Palm Planks",
+  "block.niobium.palm_sapling": "Palm Sapling",
+  "block.niobium.palm_leaves": "Palm Leaves",
+
+
   "item.niobium.endrite_upgrade_template": "Endrite Smithing Template",
 
   "item.niobium.endrite_helmet": "Endrite Helmet",
@@ -26,6 +43,7 @@
   "item.niobium.endrite_pickaxe": "Endrite Pickaxe",
   "item.niobium.endrite_shovel": "Endrite Shovel",
   "item.niobium.endrite_hoe": "Endrite Hoe",
+  "item.niobium.endrite_bow": "Endrite Bow",
 
   "itemgroup.niobium.niobium_items": "Niobium - Items",
   "itemgroup.niobium.niobium_foods": "Niobium - Foods",

@@ -4,10 +4,8 @@ import com.kushi.niobium.block.ModBlocks;
 import com.kushi.niobium.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
+import net.minecraft.block.Blocks;
+import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
@@ -48,9 +46,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.IRON_TILE), conditionsFromItem(ModItems.IRON_TILE))
                 .offerTo(recipeExporter);
 
-        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.IRON_TILES_SLAB, ModBlocks.IRON_TILES_BLOCK, 2);
-        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.IRON_TILES_WALL, ModBlocks.IRON_TILES_BLOCK, 1);
-        offerStonecuttingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.IRON_TILES_STAIRS, ModBlocks.IRON_TILES_BLOCK, 1);
+        offerStonecuttingRecipe(recipeExporter, ModBlocks.IRON_TILES_BLOCK, ModBlocks.IRON_TILES_SLAB, 2, "iron_tiles_slab_stonecutting");
+        offerStonecuttingRecipe(recipeExporter, ModBlocks.IRON_TILES_BLOCK, ModBlocks.IRON_TILES_WALL, 1, "iron_tiles_wall_stonecutting");
+        offerStonecuttingRecipe(recipeExporter, ModBlocks.IRON_TILES_BLOCK, ModBlocks.IRON_TILES_STAIRS, 1, "iron_tiles_stairs_stonecutting");
 
         offerSmithingRecipe(
                 recipeExporter,
@@ -124,6 +122,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 "endrite_boots"
         );
 
+        offerSmithingRecipe(
+                recipeExporter,
+                Items.BOW,      // Base (Netherite Pickaxe)
+                ModItems.ENDRITE_SCRAP,       // Addition (Endrite Scrap)
+                ModItems.ENDRITE_BOW,     // Result (Endrite Pickaxe)
+                "endrite_bow"
+        );
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.EMERALD_PRISM_BLOCK)
                 .pattern("P#P")
                 .pattern("#G#")
@@ -131,8 +137,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', Items.EMERALD)
                 .input('G', Items.GLOWSTONE_DUST)
                 .input('P', Items.PRISMARINE_SHARD)
-                .criterion(hasItem(ModItems.IRON_TILE), conditionsFromItem(ModItems.IRON_TILE))
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ENDRITE_BLOCK)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .input('#', ModItems.ENDRITE_SCRAP)
+                .criterion(hasItem(ModItems.ENDRITE_SCRAP), conditionsFromItem(ModItems.ENDRITE_SCRAP))
+                .offerTo(recipeExporter);
+
+        // Add a shapeless recipe to convert Nether Wart Block into 9 Nether Wart
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NETHER_WART, 9)
+                .input(Blocks.NETHER_WART_BLOCK)
+                .criterion(hasItem(Blocks.NETHER_WART_BLOCK), conditionsFromItem(Blocks.NETHER_WART_BLOCK))
+                .offerTo(recipeExporter, "nether_wart_from_nether_wart_block");
+
 
         createDoorRecipe(recipeExporter, ModBlocks.IRON_TILES_DOOR, ModItems.IRON_TILE);
 
@@ -142,7 +163,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         createTrapdoorRecipe(recipeExporter, ModBlocks.IRON_TILES_TRAPDOOR, ModItems.IRON_TILE);
 
-        createStairsRecipe(recipeExporter, ModBlocks.IRON_TILES_STAIRS, ModItems.IRON_TILE);
+        createStairsRecipe(recipeExporter, ModBlocks.IRON_TILES_STAIRS, ModItems.IRON_TILE, "iron_tiles_stairs_shaped");
+        createStairsRecipe(recipeExporter, ModBlocks.QUARTZ_BRICKS_STAIRS, Blocks.QUARTZ_BRICKS, "quartz_bricks_stairs_shaped");
     }
 
     private void offerSmithingRecipe(
@@ -198,23 +220,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter);
     }
 
-    private void createStairsRecipe(RecipeExporter recipeExporter, ItemConvertible output, ItemConvertible input) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
+    private void createStairsRecipe(RecipeExporter recipeExporter, ItemConvertible stairs, ItemConvertible material, String recipeId) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, stairs)
                 .pattern("#  ")
                 .pattern("## ")
                 .pattern("###")
-                .input('#', input)
-                .criterion(hasItem(input), conditionsFromItem(input))
-                .offerTo(recipeExporter, "iron_tiles_stairs");
+                .input('#', material)
+                .criterion(FabricRecipeProvider.hasItem(material), FabricRecipeProvider.conditionsFromItem(material))
+                .offerTo(recipeExporter, recipeId);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, stairs)
                 .pattern("  #")
                 .pattern(" ##")
                 .pattern("###")
-                .input('#', input)
-                .criterion(hasItem(input), conditionsFromItem(input))
-                .offerTo(recipeExporter, "iron_tiles_stairs_flipped");
+                .input('#', material)
+                .criterion(FabricRecipeProvider.hasItem(material), FabricRecipeProvider.conditionsFromItem(material))
+                .offerTo(recipeExporter, recipeId + "_flipped");
     }
+
 
     private void createTrapdoorRecipe(RecipeExporter recipeExporter, ItemConvertible output, ItemConvertible input) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 4)
@@ -223,5 +246,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', input)
                 .criterion(hasItem(input), conditionsFromItem(input))
                 .offerTo(recipeExporter);
+    }
+
+    private void offerStonecuttingRecipe(RecipeExporter recipeExporter, ItemConvertible input, ItemConvertible output, int count, String recipeId) {
+        StonecuttingRecipeJsonBuilder.createStonecutting(
+                        Ingredient.ofItems(input),                 // Convert input to Ingredient
+                        RecipeCategory.BUILDING_BLOCKS,            // Choose appropriate RecipeCategory
+                        output,                                    // Output item
+                        count                                      // Item count
+                )
+                .criterion(hasItem(input), conditionsFromItem(input))
+                .offerTo(recipeExporter, recipeId);
     }
 }

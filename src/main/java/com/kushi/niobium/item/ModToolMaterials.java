@@ -3,17 +3,15 @@ package com.kushi.niobium.item;
 import com.google.common.base.Suppliers;
 import com.kushi.niobium.util.ModTags;
 import net.minecraft.block.Block;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    ENDRITE(ModTags.Blocks.INCORRECT_FOR_ENDRITE_TOOL,
+    ENDRITE(ModTags.Blocks.INCORRECT_FOR_ENDRITE_TOOL, // This is passed into the constructor
             3290, 11.0F, 6.0F, 22, () -> Ingredient.ofItems(ModItems.ENDRITE_SCRAP));
 
     private final TagKey<Block> inverseTag;
@@ -24,14 +22,14 @@ public enum ModToolMaterials implements ToolMaterial {
     private final Supplier<Ingredient> repairIngredient;
 
     private ModToolMaterials(
-            final TagKey<Block> inverseTag,
+            TagKey<Block> incorrectForEndriteTool, // Passes the parameter for the inverse tag
             final int itemDurability,
             final float miningSpeed,
             final float attackDamage,
             final int enchantability,
             final Supplier<Ingredient> repairIngredient
     ) {
-        this.inverseTag = inverseTag;
+        this.inverseTag = incorrectForEndriteTool; // Assign the passed value to the instance variable
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
@@ -55,17 +53,17 @@ public enum ModToolMaterials implements ToolMaterial {
     }
 
     @Override
-    public TagKey<Block> getInverseTag() {
-        return this.inverseTag;
-    }
-
-    @Override
     public int getEnchantability() {
         return this.enchantability;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
+    }
+
+    @Override
+    public TagKey<Block> getInverseTag() {
+        return this.inverseTag;
     }
 }
