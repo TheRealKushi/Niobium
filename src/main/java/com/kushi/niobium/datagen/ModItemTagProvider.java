@@ -1,5 +1,6 @@
 package com.kushi.niobium.datagen;
 
+import com.kushi.niobium.block.ModBlocks;
 import com.kushi.niobium.item.ModItems;
 import com.kushi.niobium.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -35,5 +36,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.ENDRITE_UPGRADE_SMITHING_TEMPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.PALM_LOG.asItem())
+                .add(ModBlocks.PALM_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_PALM_LOG.asItem())
+                .add(ModBlocks.STRIPPED_PALM_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.PALM_PLANKS.asItem());
     }
 }

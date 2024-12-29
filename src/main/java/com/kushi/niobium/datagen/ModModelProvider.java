@@ -1,12 +1,16 @@
 package com.kushi.niobium.datagen;
 
 import com.kushi.niobium.block.ModBlocks;
+import com.kushi.niobium.block.custom.BlueBerryBushBlock;
+import com.kushi.niobium.block.custom.RiceCropBlock;
 import com.kushi.niobium.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -18,7 +22,14 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EMERALD_PRISM_BLOCK);
         BlockStateModelGenerator.BlockTexturePool ironTilesPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.IRON_TILES_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool quartzTilesPool =
+                blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.QUARTZ_BRICKS);
+        quartzTilesPool.stairs(ModBlocks.QUARTZ_BRICKS_STAIRS);
+
+
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDRITE_ORE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ENDRITE_BLOCK);
 
         ironTilesPool.stairs(ModBlocks.IRON_TILES_STAIRS);
         ironTilesPool.slab(ModBlocks.IRON_TILES_SLAB);
@@ -26,6 +37,17 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.IRON_TILES_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.IRON_TILES_TRAPDOOR);
+
+        blockStateModelGenerator.registerLog(ModBlocks.PALM_LOG).log(ModBlocks.PALM_LOG).wood(ModBlocks.PALM_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_PALM_LOG).log(ModBlocks.STRIPPED_PALM_LOG).wood(ModBlocks.STRIPPED_PALM_WOOD);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PALM_PLANKS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.PALM_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.PALM_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.RICE_CROP, RiceCropBlock.AGE, 0, 1, 2, 3, 4, 5);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                BlueBerryBushBlock.AGE, 0, 1, 2, 3);
     }
 
     @Override

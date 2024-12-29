@@ -27,8 +27,10 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.COOKED_RICE))
                     .displayName(Text.translatable("itemgroup.niobium.niobium_foods"))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModItems.RICE_SEEDS);
                         entries.add(ModItems.RICE);
                         entries.add(ModItems.COOKED_RICE);
+                        entries.add(ModItems.BLUEBERRIES);
                     }).build());
 
     public static final ItemGroup NIOBIUM_ARMOR_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -48,6 +50,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ENDRITE_PICKAXE);
                         entries.add(ModItems.ENDRITE_SHOVEL);
                         entries.add(ModItems.ENDRITE_HOE);
+                        entries.add(ModItems.ENDRITE_BOW);
                     }).build());
 
     public static final ItemGroup NIOBIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -63,6 +66,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.IRON_TILES_DOOR);
                         entries.add(ModBlocks.IRON_TILES_TRAPDOOR);
                         entries.add(ModBlocks.ENDRITE_ORE_BLOCK);
+                        entries.add(ModBlocks.ENDRITE_BLOCK);
+                        entries.add(ModBlocks.QUARTZ_BRICKS_STAIRS);
+                        entries.add(ModBlocks.PALM_LOG);
+                        entries.add(ModBlocks.PALM_WOOD);
+                        entries.add(ModBlocks.STRIPPED_PALM_LOG);
+                        entries.add(ModBlocks.STRIPPED_PALM_WOOD);
+                        entries.add(ModBlocks.PALM_PLANKS);
+                        entries.add(ModBlocks.PALM_LEAVES);
+                        entries.add(ModBlocks.PALM_SAPLING);
                     }).build());
 
 
