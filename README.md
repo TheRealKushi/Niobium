@@ -14,5 +14,3 @@ In the current state of the mod, Niobium is only available for Fabric. If you ar
 - New wood variants.
 - New stairs/slabs variants of blocks.
 - New crops.
-
-## Documentation
