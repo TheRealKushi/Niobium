@@ -3,11 +3,9 @@ package com.kushi.niobium;
 import com.kushi.niobium.datagen.*;
 import com.kushi.niobium.world.ModConfiguredFeatures;
 import com.kushi.niobium.world.ModPlacedFeatures;
-import com.kushi.niobium.world.gen.ModWorldGeneration;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 
 public class NiobiumDataGenerator implements DataGeneratorEntrypoint {

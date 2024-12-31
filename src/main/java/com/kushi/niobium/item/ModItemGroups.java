@@ -2,9 +2,16 @@ package com.kushi.niobium.item;
 
 import com.kushi.niobium.Niobium;
 import com.kushi.niobium.block.ModBlocks;
+import com.kushi.niobium.potion.ModPotions;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.block.Blocks;
+import net.minecraft.entity.decoration.painting.PaintingEntity;
+import net.minecraft.entity.decoration.painting.PaintingVariant;
+import net.minecraft.entity.decoration.painting.PaintingVariants;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -51,6 +58,11 @@ public class ModItemGroups {
                         entries.add(ModItems.ENDRITE_SHOVEL);
                         entries.add(ModItems.ENDRITE_HOE);
                         entries.add(ModItems.ENDRITE_BOW);
+
+                        entries.add(ModItems.EMERALD_HELMET);
+                        entries.add(ModItems.EMERALD_CHESTPLATE);
+                        entries.add(ModItems.EMERALD_LEGGINGS);
+                        entries.add(ModItems.EMERALD_BOOTS);
                     }).build());
 
     public static final ItemGroup NIOBIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
