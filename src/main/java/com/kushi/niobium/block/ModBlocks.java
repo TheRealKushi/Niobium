@@ -2,6 +2,7 @@ package com.kushi.niobium.block;
 
 import com.kushi.niobium.Niobium;
 import com.kushi.niobium.block.custom.BlueBerryBushBlock;
+import com.kushi.niobium.block.custom.ModSaplingBlock;
 import com.kushi.niobium.block.custom.RiceCropBlock;
 import com.kushi.niobium.world.tree.ModSaplingGenerator;
 import net.minecraft.block.*;
@@ -99,7 +100,7 @@ public class ModBlocks {
     public static final Block PALM_LEAVES = registerBlock("palm_leaves",
             new Block(AbstractBlock.Settings.copy(Blocks.JUNGLE_LEAVES)));
     public static final Block PALM_SAPLING = registerBlock("palm_sapling",
-            new SaplingBlock(ModSaplingGenerator.PALMTREE, AbstractBlock.Settings.copy(Blocks.JUNGLE_SAPLING)));
+            new ModSaplingBlock(ModSaplingGenerator.PALMTREE, AbstractBlock.Settings.copy(Blocks.JUNGLE_SAPLING), Blocks.SAND));
 
     public static final Block ENDRITE_BLOCK = registerBlock("endrite_block",
             new Block(AbstractBlock.Settings.create()

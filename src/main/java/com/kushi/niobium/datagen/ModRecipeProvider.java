@@ -140,12 +140,34 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .offerTo(recipeExporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ENDRITE_BLOCK)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EMERALD_HELMET)
+                .pattern("###")
+                .pattern("# #")
+                .input('#', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EMERALD_CHESTPLATE)
+                .pattern("# #")
                 .pattern("###")
                 .pattern("###")
+                .input('#', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EMERALD_LEGGINGS)
                 .pattern("###")
-                .input('#', ModItems.ENDRITE_SCRAP)
-                .criterion(hasItem(ModItems.ENDRITE_SCRAP), conditionsFromItem(ModItems.ENDRITE_SCRAP))
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EMERALD_BOOTS)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', Items.EMERALD)
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .offerTo(recipeExporter);
 
         // Add a shapeless recipe to convert Nether Wart Block into 9 Nether Wart
