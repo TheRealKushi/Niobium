@@ -7,9 +7,12 @@
 ## Features
 
 - New **Endrite Ore**. Can be found in The End and can be used in Smithing Tables along with the new Endrite Smithing Templates to create the new Endrite armor and tools set.
+- New **Emerald** tools and armor.
 - New wood variants.
 - New stairs/slabs variants of blocks.
 - New crops.
+- New paintings.
+- New potions.
 
 ## Installation Guide
 
