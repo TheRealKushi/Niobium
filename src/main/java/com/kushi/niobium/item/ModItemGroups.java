@@ -63,11 +63,17 @@ public class ModItemGroups {
                         entries.add(ModItems.EMERALD_CHESTPLATE);
                         entries.add(ModItems.EMERALD_LEGGINGS);
                         entries.add(ModItems.EMERALD_BOOTS);
+
+                        entries.add(ModItems.EMERALD_SWORD);
+                        entries.add(ModItems.EMERALD_AXE);
+                        entries.add(ModItems.EMERALD_PICKAXE);
+                        entries.add(ModItems.EMERALD_SHOVEL);
+                        entries.add(ModItems.EMERALD_HOE);
                     }).build());
 
     public static final ItemGroup NIOBIUM_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Niobium.MOD_ID, "niobium_blocks"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.EMERALD_PRISM_BLOCK))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.ENDRITE_BLOCK))
                     .displayName(Text.translatable("itemgroup.niobium.niobium_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.EMERALD_PRISM_BLOCK);

@@ -27,6 +27,18 @@ public class ModItems {
             }
         }
     });
+
+    public static final Item EMERALD_SWORD = registerItem("emerald_sword", new SwordItem(ModToolMaterials.EMERALD, new Item.Settings()
+            .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.EMERALD, 3, -2.4f)).maxCount(1)));
+    public static final Item EMERALD_PICKAXE = registerItem("emerald_pickaxe", new PickaxeItem(ModToolMaterials.EMERALD, new Item.Settings()
+            .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.EMERALD, 1, -2.8f)).maxCount(1)));
+    public static final Item EMERALD_SHOVEL = registerItem("emerald_shovel", new ShovelItem(ModToolMaterials.EMERALD, new Item.Settings()
+            .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.EMERALD, 1.5f, -3.0f)).maxCount(1)));
+    public static final Item EMERALD_AXE = registerItem("emerald_axe", new AxeItem(ModToolMaterials.EMERALD, new Item.Settings()
+            .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.EMERALD, 6, -3.2f)).maxCount(1)));
+    public static final Item EMERALD_HOE = registerItem("emerald_hoe", new HoeItem(ModToolMaterials.EMERALD, new Item.Settings()
+            .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.EMERALD, 0, -3f)).maxCount(1)));
+
     public static final Item ENDRITE_SCRAP = registerItem("endrite_scrap", new Item(new Item.Settings().fireproof()));
 
     public static final Item ENDRITE_SWORD = registerItem("endrite_sword", new SwordItem(ModToolMaterials.ENDRITE, new Item.Settings()

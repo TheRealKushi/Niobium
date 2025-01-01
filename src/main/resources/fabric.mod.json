@@ -3,15 +3,16 @@
 	"id": "niobium",
 	"version": "${version}",
 	"name": "Niobium",
-	"description": "This is the Niobium mod by TheRealKushi!",
+	"description": "A mod that adds features and optimization improvements that should be in Vanilla.",
 	"authors": [
 		"TheRealKushi"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/TheRealKushi/Niobium"
+		"sources": "https://github.com/TheRealKushi/Niobium",
+		"issues": "https://github.com/TheRealKushi/Niobium/issues"
 	},
-	"license": "MIT",
+	"license": "GLP-3.0",
 	"icon": "assets/niobium/icon.png",
 	"environment": "*",
 	"entrypoints": {

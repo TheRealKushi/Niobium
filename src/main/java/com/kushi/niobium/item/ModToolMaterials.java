@@ -3,6 +3,8 @@ package com.kushi.niobium.item;
 import com.google.common.base.Suppliers;
 import com.kushi.niobium.util.ModTags;
 import net.minecraft.block.Block;
+import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
@@ -12,7 +14,9 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
     ENDRITE(ModTags.Blocks.INCORRECT_FOR_ENDRITE_TOOL, // This is passed into the constructor
-            3290, 11.0F, 6.0F, 22, () -> Ingredient.ofItems(ModItems.ENDRITE_SCRAP));
+            3290, 11.0F, 6.0F, 22, () -> Ingredient.ofItems(ModItems.ENDRITE_SCRAP)),
+    EMERALD(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL,
+            520, 7.0F, 2.5F, 12, () -> Ingredient.ofItems(Items.EMERALD));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
@@ -22,14 +26,14 @@ public enum ModToolMaterials implements ToolMaterial {
     private final Supplier<Ingredient> repairIngredient;
 
     private ModToolMaterials(
-            TagKey<Block> incorrectForEndriteTool, // Passes the parameter for the inverse tag
+            final TagKey<Block> inverseTag,
             final int itemDurability,
             final float miningSpeed,
             final float attackDamage,
             final int enchantability,
             final Supplier<Ingredient> repairIngredient
     ) {
-        this.inverseTag = incorrectForEndriteTool; // Assign the passed value to the instance variable
+        this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;

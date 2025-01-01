@@ -28,6 +28,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.ENDRITE_HOE);
 
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.EMERALD_SWORD);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.EMERALD_AXE);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.EMERALD_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.EMERALD_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.EMERALD_HOE);
+
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ENDRITE_HELMET)
                 .add(ModItems.ENDRITE_CHESTPLATE)
