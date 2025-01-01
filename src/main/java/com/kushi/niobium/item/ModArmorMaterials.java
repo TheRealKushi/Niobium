@@ -25,7 +25,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 2);
                 map.put(ArmorItem.Type.BODY, 4);
 
-            }), 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, () -> Ingredient.ofItems(ModItems.LIGHT_HELMET),
+            }), 10, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, () -> Ingredient.ofItems(ModItems.LIGHT_HELMET),
                     List.of(new ArmorMaterial.Layer(Identifier.of(Niobium.MOD_ID, "light_helmet"))), 0,0));
 
     public static final RegistryEntry<ArmorMaterial> ENDRITE_ARMOR_MATERIAL = registerArmorMaterial("endrite",

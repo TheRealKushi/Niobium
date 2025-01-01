@@ -12,6 +12,9 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_ENDRITE_TOOL = createTag("needs_endrite_tool");
         public static final TagKey<Block> INCORRECT_FOR_ENDRITE_TOOL = createTag("incorrect_for_endrite_tool");
 
+        public static final TagKey<Block> NEEDS_EMERALD_TOOL = createTag("needs_endrite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_EMERALD_TOOL = createTag("incorrect_for_endrite_tool");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(Niobium.MOD_ID, name));
         }

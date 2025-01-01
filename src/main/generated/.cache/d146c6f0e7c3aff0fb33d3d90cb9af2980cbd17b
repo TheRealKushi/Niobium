@@ -1,7 +1,8 @@
-// 1.21.1	2024-12-30T21:07:36.0873072	Niobium/Tags for minecraft:block
+// 1.21.1	2024-12-31T17:32:08.470818	Niobium/Tags for minecraft:block
 f007262d39be06132b56afeddf7ae35a9377cd94 data\minecraft\tags\block\needs_diamond_tool.json
 ae34db23478b088a04319ec4c9f4900212180b57 data\minecraft\tags\block\needs_iron_tool.json
 71e10d9fb78d398f649ed271ed73ca24c8687037 data\minecraft\tags\block\mineable\pickaxe.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data\niobium\tags\block\needs_endrite_tool.json
 1a617191968d2c2acf8a665ee371b6437ada2457 data\minecraft\tags\block\logs_that_burn.json
 43eb481e3b87951bbbba48835e878d519c080863 data\minecraft\tags\block\needs_stone_tool.json
 f934642edae4b6aa46d4d951e1ad9bd92fbd99ae data\minecraft\tags\block\walls.json

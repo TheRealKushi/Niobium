@@ -35,6 +35,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.EMERALD_PRISM_BLOCK);
 
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_EMERALD_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.IRON_TILES_BLOCK)
                 .add(ModBlocks.IRON_TILES_SLAB)

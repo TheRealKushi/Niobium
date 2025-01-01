@@ -1,10 +1,10 @@
-// 1.21.1	2024-12-30T21:07:36.0914268	Niobium/Tags for minecraft:item
-950a952687e6110f399121c45bc59e05771b442a data\minecraft\tags\item\swords.json
+// 1.21.1	2024-12-31T17:32:08.479004	Niobium/Tags for minecraft:item
+96f4ef7370866818db3df316e0822b5483135f70 data\minecraft\tags\item\swords.json
 1a617191968d2c2acf8a665ee371b6437ada2457 data\minecraft\tags\item\logs_that_burn.json
 f72581e978fb790038f468193e79c8b0985cbc19 data\minecraft\tags\item\planks.json
-08e9fb673c8c869588780159535496fe154053da data\minecraft\tags\item\pickaxes.json
+dce0c4e0f2b3b545f030658f786635d5d9954578 data\minecraft\tags\item\pickaxes.json
 69b1b2db637b449747cf54d035df213edde4ef0a data\minecraft\tags\item\trim_templates.json
 6a95898936f052590b6005d5c2d0ca65b2478f4e data\minecraft\tags\item\trimmable_armor.json
-483d75834093d8037419149e579672c01b97480c data\minecraft\tags\item\axes.json
-bef21fc229aa23da6239e21df9aece30e80c8a25 data\minecraft\tags\item\shovels.json
-9b1340081bcdedc21f9cdae13a1a4f407f8d7c6d data\minecraft\tags\item\hoes.json
+53fe4c490275eb2908d6e770eac7c7e0ea3bdfd6 data\minecraft\tags\item\axes.json
+8a1e3014e44613e191bc67d0ccf99703eeb0f023 data\minecraft\tags\item\shovels.json
+42758876f7c7e7eb56d0f62bffaaebf01c032cc8 data\minecraft\tags\item\hoes.json

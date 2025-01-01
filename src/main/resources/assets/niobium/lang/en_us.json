@@ -50,9 +50,16 @@
   "item.niobium.endrite_hoe": "Endrite Hoe",
   "item.niobium.endrite_bow": "Endrite Bow",
 
+  "item.niobium.emerald_sword": "Emerald Sword",
+  "item.niobium.emerald_axe": "Emerald Axe",
+  "item.niobium.emerald_pickaxe": "Emerald Pickaxe",
+  "item.niobium.emerald_shovel": "Emerald Shovel",
+  "item.niobium.emerald_hoe": "Emerald Hoe",
+
   "item.minecraft.potion.effect.levitation_potion": "Potion of Levitation",
   "item.minecraft.splash_potion.effect.levitation_potion": "Splash Potion of Levitation",
   "item.minecraft.lingering_potion.effect.levitation_potion": "Lingering Potion of Levitation",
+  "item.minecraft.tipped_arrow.effect.levitation_potion": "Arrow of Levitation",
 
   "itemgroup.niobium.niobium_items": "Niobium - Items",
   "itemgroup.niobium.niobium_foods": "Niobium - Foods",
