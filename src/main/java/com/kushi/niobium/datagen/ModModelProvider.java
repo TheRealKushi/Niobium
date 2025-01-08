@@ -52,7 +52,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.LIGHT_HELMET, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_RICE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RICE, Models.GENERATED);
 
@@ -81,6 +80,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.EMERALD_BOOTS));
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.LIGHT_HELMET);
 
         itemModelGenerator.register(ModItems.ENDRITE_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
 

@@ -170,6 +170,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CHAINMAIL_HELMET)
+                .pattern("###")
+                .pattern("# #")
+                .input('#', Items.CHAIN)
+                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CHAINMAIL_CHESTPLATE)
+                .pattern("# #")
+                .pattern("###")
+                .pattern("###")
+                .input('#', Items.CHAIN)
+                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CHAINMAIL_LEGGINGS)
+                .pattern("###")
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', Items.CHAIN)
+                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.CHAINMAIL_BOOTS)
+                .pattern("# #")
+                .pattern("# #")
+                .input('#', Items.CHAIN)
+                .criterion(hasItem(Items.CHAIN), conditionsFromItem(Items.CHAIN))
+                .offerTo(recipeExporter);
+
         // Add a shapeless recipe to convert Nether Wart Block into 9 Nether Wart
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.NETHER_WART, 9)
                 .input(Blocks.NETHER_WART_BLOCK)

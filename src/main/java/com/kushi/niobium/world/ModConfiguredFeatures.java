@@ -3,6 +3,8 @@ package com.kushi.niobium.world;
 import com.kushi.niobium.Niobium;
 import com.kushi.niobium.block.ModBlocks;
 import com.kushi.niobium.block.custom.BlueBerryBushBlock;
+import com.kushi.niobium.block.custom.RiceCropBlock;
+import com.kushi.niobium.world.tree.custom.PalmTreeFoliagePlacer;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -23,12 +25,12 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
 
 import java.util.List;
-
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ENDRITE_ORE_KEY_LARGE = registerKey("endrite_ore_large");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ENDRITE_ORE_KEY_SMALL = registerKey("endrite_ore_small");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PALM_TREE_KEY = registerKey("palm_tree");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BLUEBERRY_BUSH_KEY = registerKey("blueberry_bush_key");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> RICE_CROP_KEY = registerKey("rice_crop_key");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest endReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
@@ -44,7 +46,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.PALM_LOG),
                 new BendingTrunkPlacer(5, 4, 1, 5, UniformIntProvider.create(1, 1)),
                 BlockStateProvider.of(ModBlocks.PALM_LEAVES),
-                new RandomSpreadFoliagePlacer(UniformIntProvider.create(3, 4), ConstantIntProvider.create(0), ConstantIntProvider.create(2), 8),
+                new PalmTreeFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
                 new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.SAND)).build());
 
         register(context, BLUEBERRY_BUSH_KEY, Feature.RANDOM_PATCH,
@@ -52,6 +54,12 @@ public class ModConfiguredFeatures {
                         Feature.SIMPLE_BLOCK,
                         new SimpleBlockFeatureConfig(BlockStateProvider.of((BlockState)ModBlocks.BLUEBERRY_BUSH.getDefaultState().with(SweetBerryBushBlock.AGE, 3))),
                         List.of(Blocks.GRASS_BLOCK)));
+
+        register(context, RICE_CROP_KEY, Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(
+                        Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of((BlockState)ModBlocks.RICE_CROP.getDefaultState().with(RiceCropBlock.AGE, RiceCropBlock.SECOND_STAGE_MAX_AGE))),
+                        List.of(Blocks.GRASS_BLOCK, Blocks.DIRT)));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

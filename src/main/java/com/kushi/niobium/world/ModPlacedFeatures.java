@@ -19,6 +19,7 @@ public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> PALMTREE_PLACED_KEY = registerKey("palmtree_placed");
     public static final RegistryKey<PlacedFeature> BLUEBERRY_BUSH_PLACED_KEY = registerKey("blueberry_bush_placed");
+    public static final RegistryKey<PlacedFeature> RICE_CROP_PLACED_KEY = registerKey("rice_crop_key");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -38,6 +39,9 @@ public class ModPlacedFeatures {
 
         register(context, BLUEBERRY_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BLUEBERRY_BUSH_KEY),
                 RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        register(context, RICE_CROP_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.RICE_CROP_KEY),
+                RarityFilterPlacementModifier.of(52), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
