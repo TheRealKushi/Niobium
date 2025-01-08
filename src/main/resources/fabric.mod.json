@@ -12,7 +12,7 @@
 		"sources": "https://github.com/TheRealKushi/Niobium",
 		"issues": "https://github.com/TheRealKushi/Niobium/issues"
 	},
-	"license": "GLP-3.0",
+	"license": "GPL-3.0",
 	"icon": "assets/niobium/icon.png",
 	"environment": "*",
 	"entrypoints": {

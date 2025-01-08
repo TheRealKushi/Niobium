@@ -73,5 +73,13 @@
   "tooltip.niobium.chisel": "§9Press §eShift§r §9for more information.",
 
   "tooltip.niobium.iron_tile.shift_down": "§eThis item can be crafted into Iron Tile Blocks.",
-  "tooltip.niobium.iron_tile": "§9Press §eShift§r §9for more information."
+  "tooltip.niobium.iron_tile": "§9Press §eShift§r §9for more information.",
+
+  "menu.niobium": "Niobium",
+  "niobiumOptions.title": "Niobium - Settings",
+  "modGui.addons": "World Addons",
+  "modGui.search": "Search",
+  "modGui.title": "Download Addons",
+  "niobiumOptions.enable_custom_world_gen": "Custom World Generation",
+  "niobiumOptions.enable_custom_potions": "Custom Potions"
 }

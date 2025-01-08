@@ -4,7 +4,12 @@ import com.kushi.niobium.block.ModBlocks;
 import com.kushi.niobium.util.ModModelPredicates;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.client.gui.screen.option.OptionsScreen;
+import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.text.Text;
+
+import static me.shedaniel.autoconfig.AutoConfig.getConfigScreen;
 
 public class NiobiumClient implements ClientModInitializer {
     @Override

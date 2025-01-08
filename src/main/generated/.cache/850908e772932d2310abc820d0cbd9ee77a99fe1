@@ -1,10 +1,10 @@
-// 1.21.1	2024-12-31T17:32:08.4800147	Niobium/Block Loot Tables
+// 1.21.1	2025-01-06T23:38:57.0158282	Niobium/Block Loot Tables
 f4db20fb775eb646c2a54d8da9513ad740ca1057 data\niobium\loot_table\blocks\quartz_bricks_stairs.json
 9052d8d4ed32a74f99c0fcbfb1444eb6507b37a8 data\niobium\loot_table\blocks\palm_wood.json
 20ea3709118877a886b8b99e6270afe728d92492 data\niobium\loot_table\blocks\iron_tiles_door.json
 383bc860a4850d45e1a58d3387bb7f6c6d3d7546 data\niobium\loot_table\blocks\iron_tiles_wall.json
-67d20f96f7bfd804edcd864509a0306a7d0f9a99 data\niobium\loot_table\blocks\palm_planks.json
 59c720b58fc1a3583ac2c0971e05f43b4e89718f data\niobium\loot_table\blocks\stripped_palm_wood.json
+67d20f96f7bfd804edcd864509a0306a7d0f9a99 data\niobium\loot_table\blocks\palm_planks.json
 41dbb704330fd9657ff2ce538cf376d05ac29548 data\niobium\loot_table\blocks\emerald_prism_block.json
 11f1f932090b81a4e278cfa99dcf64ea38aa5829 data\niobium\loot_table\blocks\palm_log.json
 382f7917221637907e14be3bd5c1d2cbed8d8ce4 data\niobium\loot_table\blocks\endrite_block.json

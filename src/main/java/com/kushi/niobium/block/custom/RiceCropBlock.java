@@ -79,9 +79,9 @@ public class RiceCropBlock extends CropBlock {
     @Override
     protected boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
         if (this.getAge(state) > FIRST_STAGE_MAX_AGE) {
-            // Ensure the block below is a part of this crop and at the correct stage
+            // Ensure the block below is either dirt, grass, or another valid crop block at the correct stage
             BlockState belowState = world.getBlockState(pos.down());
-            return belowState.isOf(this) && this.getAge(belowState) == FIRST_STAGE_MAX_AGE;
+            return belowState.isOf(Blocks.DIRT) || belowState.isOf(Blocks.GRASS_BLOCK) || (belowState.isOf(this) && this.getAge(belowState) == FIRST_STAGE_MAX_AGE);
         }
         return super.canPlaceAt(state, world, pos);
     }

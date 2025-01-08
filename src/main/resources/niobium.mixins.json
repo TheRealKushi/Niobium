@@ -3,7 +3,9 @@
 	"package": "com.kushi.niobium.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"NiobiumScreenMixin",
+		"FoliagePlacerTypeInvoker"
 	],
 	"injectors": {
 		"defaultRequire": 1
