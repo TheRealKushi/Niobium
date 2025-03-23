@@ -2,19 +2,20 @@
 
 ## What is Niobium?
 
-**Niobium** is a Vanilla+ Mod that adds new features and performance improvements to the game. Currently, Niobium is only available on Modrinth, since it's the best place to publish a mod. However, this can change in the future.
+**Niobium** is a Vanilla+ Mod that adds new features to the game. Currently, Niobium is only available on Modrinth and Curseforge.
 
-## Features
+## **Downloads**
+Downloads are available either on Modrinth or CurseForge.
 
-- New **Endrite Ore**. Can be found in The End and can be used in Smithing Tables along with the new Endrite Smithing Templates to create the new Endrite armor and tools set.
-- New **Emerald** tools and armor.
-- New wood variants.
-- New stairs/slabs variants of blocks.
-- New crops.
-- New paintings.
-- New potions.
+- [Modrinth](https://modrinth.com/mod/niobium/)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/niobium/)
 
-## Installation Guide
+## **Features**
 
-In the current state of the mod, Niobium is only available for Fabric. If you are using a third-party launcher, it probably has built-in functionality to automatically install mod loaders. Once you have installed your mod loader, simply place Niobium into your mods folder.
-
+- Adds new ores, tools and other important blocks missing from Vanilla.
+- Adds new potions, crops and food.
+- Adds new paintings to the game.
+- Adds recipes for uncraftable items.
+- Makes some items 3D, like the Mace.
+- Adds new mobs and re-adds unused mobs.
+- Adds new trees and biomes.
