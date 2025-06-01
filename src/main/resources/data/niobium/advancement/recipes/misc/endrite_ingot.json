@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_endrite_scrap": {
+      "conditions": {
+        "items": [
+          {
+            "items": "niobium:endrite_scrap"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "niobium:endrite_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_endrite_scrap"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "niobium:endrite_ingot"
+    ]
+  }
+}

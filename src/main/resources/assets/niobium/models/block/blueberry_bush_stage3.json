@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "niobium:block/blueberry_bush_stage3"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "niobium:block/wooden_chair",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "niobium:block/wooden_chair"
+    },
+    "facing=south": {
+      "model": "niobium:block/wooden_chair",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "niobium:block/wooden_chair",
+      "y": 270
+    }
+  }
+}

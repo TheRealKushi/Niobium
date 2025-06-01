@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_endrite_scrap": {
+      "conditions": {
+        "items": [
+          {
+            "items": "niobium:endrite_scrap"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_netherite_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:smithing/endrite_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_netherite_axe",
+      "has_endrite_scrap"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:smithing/endrite_axe"
+    ]
+  }
+}

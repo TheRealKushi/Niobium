@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "niobium:block/stripped_palm_log",
+    "side": "niobium:block/stripped_palm_log"
+  }
+}

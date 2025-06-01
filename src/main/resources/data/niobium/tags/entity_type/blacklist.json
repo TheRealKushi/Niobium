@@ -1,0 +1,6 @@
+{
+  "__comment": "List of mobs that will be not damaged by stonecutter",
+  "values": [
+    "minecraft:villager"
+  ]
+}

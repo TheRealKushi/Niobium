@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "cooked_rice",
+  "ingredient": {
+    "item": "niobium:rice"
+  },
+  "result": {
+    "id": "niobium:cooked_rice"
+  }
+}

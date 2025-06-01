@@ -1,0 +1,21 @@
+{
+	"required": true,
+	"package": "com.kushi.niobium.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin",
+		"FoliagePlacerTypeInvoker",
+		"ItemRendererMixin",
+		"ItemStackMixin",
+		"ModelLoaderMixin",
+		"NiobiumScreenMixin",
+		"WardenEntityMixin",
+		"MixinStonecutterDamage"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"client": [
+		"ClientPlayerInteractionManagerMixin"
+	]
+}

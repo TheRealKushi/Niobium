@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "niobium:block/yellow_stained_glass_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/yellow_stained_glass"
+    },
+    "type=top": {
+      "model": "niobium:block/yellow_stained_glass_slab_top"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "niobium:endrite_scrap"
+    },
+    {
+      "item": "niobium:endrite_scrap"
+    },
+    {
+      "item": "niobium:endrite_scrap"
+    },
+    {
+      "item": "niobium:endrite_scrap"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "niobium:endrite_ingot"
+  }
+}

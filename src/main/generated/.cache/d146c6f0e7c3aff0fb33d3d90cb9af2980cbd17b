@@ -1,0 +1,19 @@
+// 1.21	2025-06-01T15:02:52.5209012	Niobium/Tags for minecraft:block
+ae34db23478b088a04319ec4c9f4900212180b57 data\minecraft\tags\block\needs_iron_tool.json
+980dc1dc33657cfd628919ec997e4c5801852a2c data\minecraft\tags\block\wall_hanging_signs.json
+f934642edae4b6aa46d4d951e1ad9bd92fbd99ae data\minecraft\tags\block\walls.json
+71e10d9fb78d398f649ed271ed73ca24c8687037 data\minecraft\tags\block\mineable\pickaxe.json
+f007262d39be06132b56afeddf7ae35a9377cd94 data\minecraft\tags\block\needs_diamond_tool.json
+a1542431c08f69dd2a80d4c590b3a037334207a5 data\minecraft\tags\block\wooden_stairs.json
+1a617191968d2c2acf8a665ee371b6437ada2457 data\minecraft\tags\block\logs_that_burn.json
+137264bfcba7c0acd9cff34f8a9b96392f04a562 data\minecraft\tags\block\wooden_fences.json
+137264bfcba7c0acd9cff34f8a9b96392f04a562 data\minecraft\tags\block\fences.json
+43eb481e3b87951bbbba48835e878d519c080863 data\minecraft\tags\block\needs_stone_tool.json
+7e11e9b14a4cf99ec739e11dc9c98c379d1f3cad data\minecraft\tags\block\fence_gates.json
+b9566fe7a10024396af22b8f934a3758136d2297 data\minecraft\tags\block\standing_signs.json
+7b47f07c1c1b70d2cf5f1f9b5a0b64196fff78da data\minecraft\tags\block\wooden_slabs.json
+8e3da3ad5789cf93339cb6ba5441beca15e6c4d2 data\minecraft\tags\block\ceiling_hanging_signs.json
+b9566fe7a10024396af22b8f934a3758136d2297 data\minecraft\tags\block\signs.json
+e5889bead485b3f883e4ac7f98d00d8ecc344e12 data\minecraft\tags\block\slabs.json
+83cc30a856a2df4ce17f2cad306d23b88618d7ca data\minecraft\tags\block\doors.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data\niobium\tags\block\needs_endrite_tool.json

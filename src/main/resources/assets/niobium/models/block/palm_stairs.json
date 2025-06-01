@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "niobium:block/palm_planks",
+    "side": "niobium:block/palm_planks",
+    "top": "niobium:block/palm_planks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "niobium:block/palm_slab"
+    },
+    "type=double": {
+      "model": "niobium:block/palm_planks"
+    },
+    "type=top": {
+      "model": "niobium:block/palm_slab_top"
+    }
+  }
+}

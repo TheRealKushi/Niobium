@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "niobium:endrite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_helmet"
+  },
+  "result": {
+    "count": 1,
+    "id": "niobium:endrite_helmet"
+  },
+  "template": {
+    "item": "niobium:endrite_upgrade_template"
+  }
+}

@@ -1,0 +1,27 @@
+// 1.21	2025-06-01T15:02:52.5279075	Niobium/Tags for minecraft:item
+69b1b2db637b449747cf54d035df213edde4ef0a data\minecraft\tags\item\trim_materials.json
+39ee780e381eee7c3421edac518a33e84cec6fcf data\minecraft\tags\item\enchantable\mining.json
+e262ab8eaf50dc13f168e28da3df01ba86b17aca data\minecraft\tags\item\enchantable\equippable.json
+42758876f7c7e7eb56d0f62bffaaebf01c032cc8 data\minecraft\tags\item\hoes.json
+4ab2fe5a762b59023e074a73499c0195dc4fb1c4 data\minecraft\tags\item\enchantable\durability.json
+96f4ef7370866818db3df316e0822b5483135f70 data\minecraft\tags\item\swords.json
+f675c3e343b506fede70d6aaf4815182777aa5a2 data\minecraft\tags\item\chest_armor.json
+a4dae955f8b8b95925a4812b114420b7203ffa3f data\minecraft\tags\item\foot_armor.json
+15b0380a1e0e6a5b048fca044f25fe7ada78062e data\minecraft\tags\item\leg_armor.json
+39ee780e381eee7c3421edac518a33e84cec6fcf data\minecraft\tags\item\enchantable\mining_loot.json
+4ab2fe5a762b59023e074a73499c0195dc4fb1c4 data\minecraft\tags\item\enchantable\armor.json
+94b3f353da16cfc770367e374ffe95f8ce8f15cb data\minecraft\tags\item\head_armor.json
+1a617191968d2c2acf8a665ee371b6437ada2457 data\minecraft\tags\item\logs_that_burn.json
+53fe4c490275eb2908d6e770eac7c7e0ea3bdfd6 data\minecraft\tags\item\axes.json
+f72581e978fb790038f468193e79c8b0985cbc19 data\minecraft\tags\item\planks.json
+96f4ef7370866818db3df316e0822b5483135f70 data\minecraft\tags\item\enchantable\sword.json
+dce0c4e0f2b3b545f030658f786635d5d9954578 data\minecraft\tags\item\pickaxes.json
+1a617191968d2c2acf8a665ee371b6437ada2457 data\minecraft\tags\item\logs.json
+a4dae955f8b8b95925a4812b114420b7203ffa3f data\minecraft\tags\item\enchantable\foot_armor.json
+94b3f353da16cfc770367e374ffe95f8ce8f15cb data\minecraft\tags\item\enchantable\head_armor.json
+8a1e3014e44613e191bc67d0ccf99703eeb0f023 data\minecraft\tags\item\shovels.json
+15b0380a1e0e6a5b048fca044f25fe7ada78062e data\minecraft\tags\item\enchantable\leg_armor.json
+f675c3e343b506fede70d6aaf4815182777aa5a2 data\minecraft\tags\item\enchantable\chest_armor.json
+7f2e5f7df63e2fc424e282c6b4b516e29e28f61b data\minecraft\tags\item\fox_food.json
+f2eba15b19b8cf8d406950322fce6919c9d229e5 data\minecraft\tags\item\enchantable\bow.json
+4ab2fe5a762b59023e074a73499c0195dc4fb1c4 data\minecraft\tags\item\trimmable_armor.json

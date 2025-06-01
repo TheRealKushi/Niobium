@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "ingredient": {
+    "item": "niobium:raw_horse_meat"
+  },
+  "result": {
+    "id": "niobium:cooked_horse_meat"
+  }
+}

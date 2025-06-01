@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "niobium:endrite_ingot"
+  },
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "result": {
+    "count": 1,
+    "id": "niobium:endrite_axe"
+  },
+  "template": {
+    "item": "niobium:endrite_upgrade_template"
+  }
+}

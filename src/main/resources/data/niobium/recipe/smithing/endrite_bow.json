@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "niobium:endrite_ingot"
+  },
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "result": {
+    "count": 1,
+    "id": "niobium:endrite_bow"
+  },
+  "template": {
+    "item": "niobium:endrite_upgrade_template"
+  }
+}
