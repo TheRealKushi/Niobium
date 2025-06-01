@@ -221,6 +221,8 @@ public class ModBlocks {
                 new BlockItem(block, new Item.Settings()));
     }
 
+    //Test
+
     public static void registerModBlocks() {
         Niobium.LOGGER.info("Registering Mod Blocks for " + Niobium.MOD_ID);
     }
